@@ -1,78 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <metacharset="UTF-8">
-        <meta name="viewport"content="width=device-width,intial-scale=1.0">
+
+<head>
+    <metacharset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
         <title>Cambuni </title>
-         <style>
-            {
-                margin:0;
-                padding:0;
-                box-sizing:border-box,
-                font-family:arial,san-serif,
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: order-box,
+                    font-family:arial, san-serif;
             }
-            body{
-                   background: #5f5f5f;            
+
+            body {
+                background: #5f5f5f;
             }
-            header{
-                   background: #111;
-                   color: white;
-                   text-align: center;
-                   padding: 20px;
-            }
-            nav{
-                background: #222;
-                text-align: center;
-                padding: 15px;
-            }
-            nav a{
+
+            header {
+                background: #111;
                 color: white;
+                text-align: center;
+                padding: 20px;
+            }
+
+            nav {
+                background: #66656e;
+                text-align: left;
+                padding: 15px 30px;
+                margin-top: 20px;
+            }
+
+            h1 {
+                color: #f80707;
+            }
+
+            nav a {
+                font-size: 30px;
+                color: black;
                 text-decoration: none;
-                margin: 0.15px;
+                margin: 15.00px;
                 font-weight: bold;
             }
-            hero{
+
+            a:hover {
+                color: blue;
+            }
+
+            hero {
                 height: 80vh;
-                background-image: url ("vitz.jpg")center/cover;
-                display:flex;
+                background-size: cover;
+                background-position: center;
+                display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
                 color: white;
             }
-            hero-content{
-                background:rgba(red, green, blue, alpha)
-                padding: 30px;
-                border: radius 10px;
 
+            hero-content {
+                background: rgba(red, green, blue, alpha) padding: 30px;
+                border: radius 10px;
             }
-            hero h1{
-                font-size: 50px;
+
+            hero h1 {
+                font-size: 100px;
+                color: aqua;
             }
-            hero p{
+
+            hero p {
                 margin: 15px 0;
-                font-size: 20px;
+                font-size: 500px;
             }
-            about,services,contact{
+
+            about,
+            services,
+            contact {
                 text-align: center;
             }
-            gallery{
+
+            gallery {
                 text-align: center;
             }
-            btn{
+
+            btn {
                 display: inline-block;
                 background: #600060;
                 color: white;
                 padding: 12px 15px;
                 text-decoration: none;
-                 border: radius 5px; 
+                border: radius 5px;
             }
-            section{
+
+            section {
                 padding: 50px 20px;
                 text-align: center;
             }
-            home{
-                background: url();
+
+            .home {
+                background: url("background.jpg");
                 background-size: cover;
                 background-position: center;
                 height: 500px;
@@ -82,127 +108,168 @@
                 flex-direction: column;
                 justify-content: center;
             }
-            car-container{
+
+            car-container {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 20px;
             }
-            car-card{
+
+            car-card {
                 background: white;
                 width: 320px;
                 border-radius: 10px;
                 overflow: hidden;
                 box-shadow: 0 0 10px rgba(red, green, blue, alpha);
             }
-            car-card img{
+
+            car-card img {
                 width: 100%;
                 height: 220px;
                 object-fit: cover;
             }
-            car-card h3{
+
+            car-card h3 {
                 padding: 10px;
             }
-            car-card p{
+
+            car-card p {
                 padding: 0 15px 15px;
             }
-            price{
+
+            price {
                 color: red;
                 font-size: 24px;
                 font-weight: bold;
             }
-            contact button{
+
+            contact button {
                 background: #111;
                 color: white;
                 padding: 40px;
             }
-            footer{
+
+            footer {
                 background: black;
                 color: white;
                 text-align: center;
                 padding: 15px;
             }
-         </style>
-    </head>
-    <body>
-        <header>
-            <h1>Cambuni </h1>
-            <p>your Trusted Car Marketplace</p>
-        </header>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">about</a>
-            <a href="#services">services</a>
-             <a href="#gallery">gallery</a>
-              <a href="#contact">contact</a>
-        </nav>
-        <section class="home" id="home">
-                <h1>Find Your Dream Car</h1>
-        </section>
-        <section class="about" id="about">
-                <h2>About Us</h2>
-                <br>
-                <p>
-                    Best Car Dealers</p>
-        </section>
-            <details>
-                <summary>Services I offer are(click > at beginning to view)</summary>
-                <p><ol>
-                    <em>
+
+            .whatsapp-button {
+                display: inline-block;
+                background-color: #25d366;
+                color: white;
+                padding: 12px 12px;
+                margin: 15px 0;
+                border-radius: 25px;
+                text-decoration: none;
+                font-weight: bold;
+
+            }
+
+            .whatsapp-button:hover {
+                background-color: #128c7e;
+            }
+        </style>
+</head>
+
+<body>
+    <header>
+        <h3>Kambuni</h3>
+        <p>Drive Your Dreams Into Reality</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <section class="home" id="home">
+        <h1>Find Your Dream Car with us</h1>
+    </section>
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <br>
+        <p>
+            Your trusted partner for quality vehicles</p>
+    </section>
+    <details>
+        <summary>Services I offer are(click > at beginning to view)</summary>
+        <p>
+        <ol>
+            <em>
                 <h2>Our Services</h2>
-                <li><p>Vehicle sales</p></li>
-                <li><p>Car hire</p></li>
-                  <li><p>Dealers promotion</p></li>
-                    </em>
-                    </ol>
-                </p>
+                <li>
+                    <p>car sales</p>
+                </li>
+                <li>
+                    <p>Financing</p>
+                </li>
+                <li>
+                    <p>Trade ins</p>
+                </li>
+                <li>
+                    <p>Direct Imports</p>
+                </li>
+                <li>
+                    <p>Spiro Electric Bikes</p>
+                </li>
+            </em>
+        </ol>
+        </p>
         </section>
-    <section class="gallery" id="gallery">
-        <h2>Featured Cars</h2>
-        <br>
-        <div class="car-container">
-            <div class="car-card">
-                <img src="BMW.jpg" alt="BMW" width="300">
-                <h3>BMW X5 2017 model</h3>
-                <p>Luxury Suv with advanced features.</p>
-                <p class="price">KES 5,800,000</p>
+        <section class="gallery" id="gallery">
+            <h2>Featured Cars</h2>
+            <br>
+            <div class="car-container">
+                <div class="car-card">
+                    <img src="BMW.jpg" alt="BMW" width="300">
+                    <h3>BMW X5 2017 model</h3>
+                    <p>Luxury Suv with advanced features.</p>
+                    <p class="price">KES 5,800,000</p>
+                </div>
+                <div class="car-card">
+                    <img src="mercedez.jpg" alt="mercedez" width="300">
+                    <h3>Mercedes Benz c200</h3>
+                    <p>Elegant,Powerful and fuel efficient.</p>
+                    <p class="price">KES 5,200,000</p>
+                </div>
+                <div class="car-card">
+                    <img src="toyota.jpg.jpg" alt="Toyota prado" width="300">
+                    <h3>Toyota Prado</h3>
+                    <p>Reliable SUV for all terrains.</p>
+                    <p class="price">KES 8,450,000</p>
+                </div>
+                <div class="car-card">
+                    <img src="mazda.jpg" alt="mazda" width="300">
+                    <h3>Mazda cx8</h3>
+                    <p>Reliable SUV for all terrains.</p>
+                    <p class="price">KES 3,950,000</p>
+                </div>
             </div>
-            <div class="car-card">
-                <img src="mercedez.jpg" alt="mercedez" width="300">
-                <h3>Mercedes Benz c200</h3>
-                <p>Elegant,Powerful and fuel efficient.</p>
-                <p class="price">KES 5,200,000</p>
-            </div>
-            <div class="car-card">
-                <img src="toyota.jpg.jpg" alt="Toyota prado" width="300">
-                <h3>Toyota Prado</h3>
-                <p>Reliable SUV for all terrains.</p>
-                <p class="price">KES 8,450,000</p>
-            </div>
-            <div class="car-card">
-                <img src="mazda.jpg" alt="mazda" width="300">
-                <h3>Mazda cx8</h3>
-                <p>Reliable SUV for all terrains.</p>
-                <p class="price">KES 3,950,000</p>
-            </div>
-        </div>
-    </section>
-    <section class="contact" id="contact">
-        <h2>contact us</h2>
-        <form>
-            <input type="text"placeholder="your Name">
-            <input type="email"placeholder="your email">
-            <input type="tel"placeholder="Phone Number">
-            <textarea rows="5"placeholder="your message"></textarea>
-            <button type="submit">send message</button>
-        </form>
-        <br>
-        <p>phone:+254758956299</p>
-        <p>carmbuni01@gmail.com</p>
-        <p>Kiambu,Kiambu Road</p>
-    </section>
-    <footer>
-        <p>premium cars kenya.all rights reserved.</p>
-    </footer>
-    </body>
+        </section>
+        <section class="contact" id="contact">
+            <h2><u>CONTACT NO</u></h2>
+            <form><i>
+                    Enter Name:<input type="text" placeholder="your Name"><br><br>
+                    Enter Your Email:<input type="email" placeholder="your email"><br><br>
+                    Enter Your Phone No:<input type="tel" placeholder="Phone Number"><br><br><br></i>
+                <textarea rows="5" placeholder="your message"></textarea>
+                <button type="submit">send message</button>
+            </form>
+            <br>
+            <p>phone:+254758956299</p>
+            <a href="http://wa.me/254758956299text=Hello%20Cambuni%2C201%20am%20interested%20in%20your%20cars."
+                target="_blank" class="whatsapp-button">
+                chat with us on whatsapp</a>
+            <p>carmbuni01@gmail.com</p>
+            <p>Ridgeways,Kiambu Road</p>
+        </section>
+        <footer>
+            <p>premium cars kenya.all rights reserved.</p>
+        </footer>
+</body>
+
 </html>
